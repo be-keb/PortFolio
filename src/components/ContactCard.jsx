@@ -1,3 +1,5 @@
+import { useRef, useState } from "react";
+
 import {
   Box,
   Button,
@@ -11,6 +13,10 @@ import {
 import EmailIcon from "@mui/icons-material/Email";
 
 function ContactCard() {
+  const formRef = useRef(null);
+  const [status, setStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const contactLinks = [
     {
       label: "Email",
@@ -19,6 +25,19 @@ function ContactCard() {
       icon: <EmailIcon />,
     },
   ];
+
+  function handleSubmit() {
+    setStatus("Sending...");
+    setIsSubmitting(true);
+  }
+
+  function handleIframeLoad() {
+    if (!isSubmitting) return;
+
+    setStatus("Message sent successfully.");
+    setIsSubmitting(false);
+    formRef.current?.reset();
+  }
 
   return (
     <Paper
@@ -91,35 +110,94 @@ function ContactCard() {
 
         <Divider />
 
-        <Box>
+        <iframe
+          name="web3forms-hidden-frame"
+          title="web3forms-hidden-frame"
+          style={{ display: "none" }}
+          onLoad={handleIframeLoad}
+        />
+
+        <Box
+          component="form"
+          ref={formRef}
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          target="web3forms-hidden-frame"
+          onSubmit={handleSubmit}
+        >
           <Typography variant="h6" fontWeight={800} sx={{ mb: 2 }}>
             Quick Message
           </Typography>
 
+          <input
+            type="hidden"
+            name="access_key"
+            value="b70606c5-556b-4982-be7b-b4b3ad942e1c"
+          />
+
+          <input
+            type="hidden"
+            name="subject"
+            value="New message from Qihang Feng Portfolio"
+          />
+
+          <input type="checkbox" name="botcheck" style={{ display: "none" }} />
+
           <Stack spacing={2}>
-            <TextField label="Your name" fullWidth size="small" />
-            <TextField label="Your email" fullWidth size="small" />
             <TextField
+              name="name"
+              label="Your name"
+              fullWidth
+              size="small"
+            />
+
+            <TextField
+              name="email"
+              label="Your email"
+              type="email"
+              fullWidth
+              size="small"
+              required
+            />
+
+            <TextField
+              name="message"
               label="Message"
               fullWidth
               multiline
               minRows={4}
-              placeholder="This form is a placeholder for now."
+              required
             />
 
-            <Button
-              variant="contained"
-              disabled
-              sx={{
-                alignSelf: "flex-start",
-                textTransform: "none",
-                fontWeight: 700,
-                borderRadius: 2,
-                px: 3,
-              }}
-            >
-              Send Message, Coming Soon
-            </Button>
+            <Stack direction="row" spacing={2} sx={{ alignItems: "center" }}>
+              <Button
+                type="submit"
+                variant="contained"
+                disabled={isSubmitting}
+                sx={{
+                  textTransform: "none",
+                  fontWeight: 700,
+                  borderRadius: 2,
+                  px: 3,
+                }}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </Button>
+
+              {status && (
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: status.includes("successfully")
+                      ? "success.main"
+                      : "text.secondary",
+                    fontWeight: 600,
+                  }}
+                >
+                  {status}
+                </Typography>
+              )}
+            </Stack>
           </Stack>
         </Box>
       </Stack>
