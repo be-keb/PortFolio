@@ -1,16 +1,26 @@
-# React + Vite
+# Qihang Feng Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React, Vite, and Material UI. This website introduces my background, technical skills, selected course projects, resume, and contact information.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://QihangFeng.github.io/qihang-feng-portfolio/
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Interactive landing page with animated panel switching
+- Responsive header navigation
+- Hero section with resume download and social links
+- About, Skills, Projects, and Contact cards
+- Project cards linking to selected GitHub repositories
+- Material UI based layout and styling
+- GitHub Pages deployment with GitHub Actions
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Material UI
+- JavaScript
+- GitHub Pages
+- GitHub Actions
