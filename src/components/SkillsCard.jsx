@@ -1,31 +1,43 @@
 import { Box, Chip, Divider, Paper, Stack, Typography } from "@mui/material";
 
-import CodeIcon from "@mui/icons-material/Code";
 import StorageIcon from "@mui/icons-material/Storage";
+import DnsIcon from "@mui/icons-material/Dns";
 import PsychologyIcon from "@mui/icons-material/Psychology";
+import TerminalIcon from "@mui/icons-material/Terminal";
 import BuildIcon from "@mui/icons-material/Build";
+import WebIcon from "@mui/icons-material/Web";
 
 function SkillsCard() {
   const skillGroups = [
     {
-      title: "Frontend",
-      icon: <CodeIcon />,
-      skills: ["React", "JavaScript", "Material UI", "HTML", "CSS"],
+      title: "Frontend Development",
+      icon: <WebIcon />,
+      skills: ["React", "JavaScript", "Vite", "Material UI"],
     },
     {
-      title: "Backend and Database",
+      title: "Backend Development",
+      icon: <DnsIcon />,
+      skills: ["Node.js", "Express", "REST APIs", "FastAPI"],
+    },
+    {
+      title: "Databases",
       icon: <StorageIcon />,
-      skills: ["FastAPI", "Python", "SQL", "REST APIs", "Data Processing"],
+      skills: ["SQL", "MySQL", "PostgreSQL"],
     },
     {
-      title: "Machine Learning",
+      title: "Machine Learning and Data",
       icon: <PsychologyIcon />,
-      skills: ["PyTorch", "scikit-learn", "Model Evaluation", "Explainable AI"],
+      skills: ["Python", "PyTorch", "OpenCV", "scikit-learn", "R"],
     },
     {
-      title: "Tools and Practices",
+      title: "Programming Foundations",
+      icon: <TerminalIcon />,
+      skills: ["Rust", "C", "C++", "Java"],
+    },
+    {
+      title: "Tools and Workflow",
       icon: <BuildIcon />,
-      skills: ["Git", "GitHub", "Testing", "Documentation", "Modular Design"],
+      skills: ["Git", "GitHub", "VS Code", "JupyterLab"],
     },
   ];
 
@@ -55,13 +67,13 @@ function SkillsCard() {
     >
       <Stack spacing={3}>
         <Box>
-          <Typography variant="h4" fontWeight={800}>
-            Skills
+          <Typography variant="h4" sx={{ fontWeight: 600 }}>
+            Technical Skills
           </Typography>
 
           <Typography color="text.secondary" sx={{ mt: 1, lineHeight: 1.7 }}>
-            A practical stack for building full stack applications, machine
-            learning projects, and reproducible software workflows.
+            A practical technical stack for building full stack applications,
+            machine learning projects, and reproducible software workflows.
           </Typography>
         </Box>
 
@@ -95,9 +107,7 @@ function SkillsCard() {
                   {group.icon}
                 </Box>
 
-                <Typography variant="h6" fontWeight={700}>
-                  {group.title}
-                </Typography>
+                <Typography variant="h6">{group.title}</Typography>
               </Stack>
 
               <Stack

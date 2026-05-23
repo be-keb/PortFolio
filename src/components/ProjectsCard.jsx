@@ -71,7 +71,7 @@ function ProjectsCard() {
     >
       <Stack spacing={3}>
         <Box>
-          <Typography variant="h4" fontWeight={800}>
+          <Typography variant="h4" sx={{ fontWeight: 600 }}>
             Projects
           </Typography>
 

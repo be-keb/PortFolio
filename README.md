@@ -1,10 +1,10 @@
-# Qihang Feng Portfolio
+# Portfolio
 
-A personal portfolio website built with React, Vite, and Material UI. This website introduces my background, technical skills, selected course projects, resume, and contact information.
+A clean and professional portfolio template built with React, Vite, and Material UI. It helps developers showcase their background, technical skills, selected projects, resume, and contact information in an interactive layout.
 
 ## Live Demo
 
-https://qihangfeng.github.io/portfolio/
+https://qfeng.beaverexp.com/
 
 ## Features
 
