@@ -4,7 +4,7 @@ A personal portfolio website built with React, Vite, and Material UI. This websi
 
 ## Live Demo
 
-https://QihangFeng.github.io/qihang-feng-portfolio/
+https://qihangfeng.github.io/portfolio/
 
 ## Features
 

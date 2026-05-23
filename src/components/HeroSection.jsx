@@ -82,7 +82,10 @@ function HeroSection({ activePanel, setActivePanel }) {
                 mt: 1,
                 fontWeight: 800,
                 lineHeight: 1.1,
-                fontSize: { xs: "2.6rem", md: hasActivePanel ? "3.2rem" : "4rem" },
+                fontSize: {
+                  xs: "2.6rem",
+                  md: hasActivePanel ? "3.2rem" : "4rem",
+                },
               }}
             >
               Hi, I’m Qihang Feng.
@@ -146,6 +149,15 @@ function HeroSection({ activePanel, setActivePanel }) {
                   borderRadius: 2,
                   px: 3,
                   width: { xs: "100%", sm: "fit-content" },
+                  color: "text.primary",
+                  borderColor: "grey.400",
+                  backgroundColor: "rgba(255, 255, 255, 0.75)",
+                  backdropFilter: "blur(4px)",
+
+                  "&:hover": {
+                    borderColor: "grey.600",
+                    backgroundColor: "rgba(245, 245, 245, 0.9)",
+                  },
                 }}
               >
                 Download Resume
