@@ -45,6 +45,8 @@ function ContactCard() {
       sx={{
         p: { xs: 3, md: 4 },
         borderRadius: 4,
+        height: { md: "75vh" },
+        overflow: "auto",
         border: "1px solid",
         borderColor: "divider",
         backgroundColor: "#fafafa",

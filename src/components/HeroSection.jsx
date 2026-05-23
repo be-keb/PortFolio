@@ -72,7 +72,7 @@ function HeroSection({ activePanel, setActivePanel }) {
                 letterSpacing: 1.5,
               }}
             >
-              Software Engineering Portfolio
+              Software Engineering Portfolio · Work in Progress
             </Typography>
 
             <Typography
@@ -82,7 +82,7 @@ function HeroSection({ activePanel, setActivePanel }) {
                 mt: 1,
                 fontWeight: 800,
                 lineHeight: 1.1,
-                fontSize: { xs: "2.6rem", md: "4rem" },
+                fontSize: { xs: "2.6rem", md: hasActivePanel ? "3.2rem" : "4rem" },
               }}
             >
               Hi, I’m Qihang Feng.
@@ -137,7 +137,7 @@ function HeroSection({ activePanel, setActivePanel }) {
               <Button
                 variant="outlined"
                 size="large"
-                href="/Qihang_Feng_Resume.pdf"
+                href={`${import.meta.env.BASE_URL}Qihang_Feng_Resume.pdf`}
                 download
                 startIcon={<DownloadIcon />}
                 sx={{

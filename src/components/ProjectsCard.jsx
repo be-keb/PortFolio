@@ -54,7 +54,7 @@ function ProjectsCard() {
         border: "1px solid",
         borderColor: "divider",
         backgroundColor: "#fafafa",
-        maxHeight: { md: "72vh" },
+        maxHeight: { md: "75vh" },
         overflowY: "auto",
         animation: "cardPop 500ms ease forwards",
         "@keyframes cardPop": {

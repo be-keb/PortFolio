@@ -1,16 +1,10 @@
-import {
-  Avatar,
-  Box,
-  Chip,
-  Divider,
-  Paper,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Avatar, Box, Divider, Paper, Stack, Typography } from "@mui/material";
+
+import SchoolIcon from "@mui/icons-material/School";
+import WorkIcon from "@mui/icons-material/Work";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 function AboutCard() {
-  const skills = ["React", "FastAPI", "PyTorch", "SQL", "Rust", "Git"];
-
   return (
     <Paper
       elevation={0}
@@ -18,6 +12,8 @@ function AboutCard() {
         p: { xs: 3, md: 4 },
         borderRadius: 4,
         border: "1px solid",
+        height: "75vh",
+        overflow: "auto",
         borderColor: "divider",
         backgroundColor: "#fafafa",
         animation: "cardPop 500ms ease forwards",
@@ -34,77 +30,156 @@ function AboutCard() {
       }}
     >
       <Stack spacing={3}>
-        <Avatar
-          sx={{
-            width: 150,
-            height: 150,
-            fontSize: 44,
-            fontWeight: 800,
-            bgcolor: "primary.main",
-          }}
+        {/* Header */}
+        <Stack
+          direction={"row"}
+          sx={{ justifyContent: "space-around", alignItems: "center" }}
         >
-          QF
-        </Avatar>
+          <Avatar
+            sx={{
+              width: 150,
+              height: 150,
+              fontSize: 44,
+              fontWeight: 800,
+              bgcolor: "primary.main",
+            }}
+          >
+            QF
+          </Avatar>
 
-        <Box>
-          <Typography variant="h4" fontWeight={700}>
-            Qihang Feng
-          </Typography>
+          <Box sx={{ width: "65%" }}>
+            <Typography variant="h4" sx={{ fontWeight: 600 }}>
+              Qihang Feng
+            </Typography>
 
-          <Typography sx={{ mt: 1 }}>
-            MEng in Electrical and Computer Engineering
-          </Typography>
+            <Stack direction={"row"} sx={{ alignItems: "center" }}>
+              <LocationOnIcon />
+              <Typography color="text.secondary">
+                Edmonton, AB, Canada
+              </Typography>
+            </Stack>
 
-          <Typography color="text.secondary">University of Alberta</Typography>
-        </Box>
+            <Typography color="text.secondary" sx={{ mt: 1 }}>
+              Software Engineering MEng Student
+            </Typography>
+
+            <Typography color="text.secondary">
+              Expected Graduation, May 2027
+            </Typography>
+          </Box>
+        </Stack>
 
         <Divider />
 
+        {/* Technical Experience */}
         <Box>
-          <Typography variant="subtitle2" fontWeight={700} sx={{ mb: 1.5 }}>
-            About
-          </Typography>
-
-          <Typography color="text.secondary" sx={{ lineHeight: 1.8 }}>
-            I am a software engineering MEng student focused on full stack
-            development, machine learning projects, data structures, and
-            reproducible technical work.
-          </Typography>
-        </Box>
-
-        <Box>
-          <Typography variant="subtitle2" fontWeight={700} sx={{ mb: 1.5 }}>
-            Core Skills
-          </Typography>
-
-          <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
-            {skills.map((skill) => (
-              <Chip
-                key={skill}
-                label={skill}
-                variant="outlined"
-                sx={{
-                  fontWeight: 600,
-                  borderRadius: 2,
-                }}
-              />
-            ))}
+          <Stack
+            direction="row"
+            spacing={1.5}
+            sx={{ mb: 1.5, alignItems: "center" }}
+          >
+            <WorkIcon sx={{ color: "primary.main" }} />
+            <Typography variant="h5" sx={{ fontWeight: 600 }}>
+              Technical Experience
+            </Typography>
           </Stack>
+
+          <Box
+            sx={{
+              p: 2,
+              borderRadius: 3,
+              backgroundColor: "white",
+              border: "1px solid",
+              borderColor: "divider",
+            }}
+          >
+            <Typography variant="h6">
+              Data Assistant, Campus AI Pilot Program
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Apr 2023 - Jul 2023
+            </Typography>
+            <Stack direction={"row"} sx={{ alignItems: "center" }}>
+              <LocationOnIcon sx={{ fontSize: 16 }} />
+              <Typography variant="body2" color="text.secondary">
+                Nanjing University of Posts and Telecommunications, China
+              </Typography>
+            </Stack>
+
+            <Typography
+              variant="body1"
+              color="text.secondary"
+              sx={{ mt: 1.5, lineHeight: 1.5 }}
+            >
+              Reviewed model outputs, corrected labels, automated validation
+              checks with Python, and documented reproducible issues for
+              follow-up analysis.
+            </Typography>
+          </Box>
         </Box>
 
-        <Box
-          sx={{
-            p: 2,
-            borderRadius: 3,
-            backgroundColor: "white",
-            border: "1px solid",
-            borderColor: "divider",
-          }}
-        >
-          <Typography variant="body2" color="text.secondary">
-            Currently building a personal resume website with React and Material
-            UI.
-          </Typography>
+        {/* Education */}
+        <Box>
+          <Stack
+            direction="row"
+            spacing={1.5}
+            sx={{ mb: 1.5, alignItems: "center" }}
+          >
+            <SchoolIcon sx={{ color: "primary.main" }} />
+            <Typography variant="h5" sx={{ fontWeight: 600 }}>
+              Education
+            </Typography>
+          </Stack>
+
+          <Stack spacing={2}>
+            <Box
+              sx={{
+                p: 2,
+                borderRadius: 3,
+                backgroundColor: "white",
+                border: "1px solid",
+                borderColor: "divider",
+              }}
+            >
+              <Typography variant="h6">
+                M.Eng. in Electrical and Computer Engineering
+              </Typography>
+
+              <Typography variant="body2" color="text.secondary">
+                Sep 2025 - Present
+              </Typography>
+
+              <Typography variant="body2" color="text.secondary">
+                University of Alberta, Edmonton, AB, Canada
+              </Typography>
+
+              <Typography variant="body1" color="text.secondary" sx={{ mt: 1 }}>
+                Specialization in Software Engineering and Intelligent Systems
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{
+                p: 2,
+                borderRadius: 3,
+                backgroundColor: "white",
+                border: "1px solid",
+                borderColor: "divider",
+              }}
+            >
+              <Typography variant="h6">
+                B.Eng. in Internet of Things Engineering
+              </Typography>
+
+              <Typography variant="body2" color="text.secondary">
+                Sep 2019 - Jun 2023
+              </Typography>
+
+              <Typography variant="body2" color="text.secondary">
+                Nanjing University of Posts and Telecommunications, China
+              </Typography>
+            </Box>
+          </Stack>
         </Box>
       </Stack>
     </Paper>

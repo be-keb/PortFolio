@@ -37,6 +37,8 @@ function SkillsCard() {
         borderRadius: 4,
         border: "1px solid",
         borderColor: "divider",
+        height: { md: "75vh" },
+        overflowY: "auto",
         backgroundColor: "#fafafa",
         animation: "cardPop 500ms ease forwards",
         "@keyframes cardPop": {
