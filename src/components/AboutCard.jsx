@@ -59,11 +59,11 @@ function AboutCard() {
               </Typography>
             </Stack>
 
-            <Typography color="text.secondary" sx={{ mt: 1 }}>
+            <Typography color="text.secondary" sx={{ mt: 1, ml: 0.6}}>
               Software Engineering MEng Student
             </Typography>
 
-            <Typography color="text.secondary">
+            <Typography color="text.secondary" sx={{ml: 0.6}}>
               Expected Graduation, May 2027
             </Typography>
           </Box>

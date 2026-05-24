@@ -69,9 +69,9 @@ function ContactCard() {
             Contact
           </Typography>
 
-          <Typography color="text.secondary" sx={{ mt: 1, lineHeight: 1.7 }}>
-            Feel free to reach out for software development, full stack, machine
-            learning, or project collaboration opportunities.
+          <Typography color="text.secondary" sx={{ mt: 1, lineHeight: 1.5 }}>
+            I am open to software development, full stack projects, machine
+            learning research, and technical collaboration opportunities.
           </Typography>
         </Box>
 
@@ -146,12 +146,7 @@ function ContactCard() {
           <input type="checkbox" name="botcheck" style={{ display: "none" }} />
 
           <Stack spacing={2}>
-            <TextField
-              name="name"
-              label="Your name"
-              fullWidth
-              size="small"
-            />
+            <TextField name="name" label="Your name" fullWidth size="small" />
 
             <TextField
               name="email"
@@ -200,6 +195,9 @@ function ContactCard() {
                 </Typography>
               )}
             </Stack>
+            <Typography variant="body2" color="text.secondary">
+              This form sends your message directly to my email.
+            </Typography>
           </Stack>
         </Box>
       </Stack>

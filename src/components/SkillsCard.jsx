@@ -71,7 +71,7 @@ function SkillsCard() {
             Technical Skills
           </Typography>
 
-          <Typography color="text.secondary" sx={{ mt: 1, lineHeight: 1.7 }}>
+          <Typography color="text.secondary" sx={{ mt: 1, lineHeight: 1.5 }}>
             A practical technical stack for building full stack applications,
             machine learning projects, and reproducible software workflows.
           </Typography>

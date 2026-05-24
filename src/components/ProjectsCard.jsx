@@ -13,16 +13,26 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import ImageSearchIcon from "@mui/icons-material/ImageSearch";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import WebIcon from "@mui/icons-material/Web";
 
 function ProjectsCard() {
   const projects = [
+    {
+      title: "Personal Portfolio Website",
+      type: "Frontend Development",
+      icon: <WebIcon />,
+      description:
+        "Built and deployed an interactive portfolio website with React, Vite, and Material UI, featuring animated card navigation, responsive layout, and a working contact form.",
+      tech: ["React", "Vite", "Material UI", "GitHub Pages", "Web3Forms"],
+      link: "https://github.com/QihangFeng/portfolio",
+    },
     {
       title: "Reliable LIME under Query Budget Constraints",
       type: "Explainable AI",
       icon: <PsychologyIcon />,
       description:
-        "Studied the reliability of LIME image explanations under limited query budgets and built a coarse-to-fine strategy to identify meaningful regions with fewer model queries.",
-      tech: ["Python", "LIME", "XAI", "PyTorch", "scikit-learn"],
+        "Built a budget sweep pipeline for LIME image explanations and designed a coarse to fine budget allocation strategy to improve faithfulness under low query budgets.",
+      tech: ["Python", "LIME", "XAI", "Evaluation", "scikit-learn"],
       link: "https://github.com/QihangFeng/Reliable-LIME-under-Query-Budget-Constraints",
     },
     {
@@ -30,7 +40,7 @@ function ProjectsCard() {
       type: "Computer Vision",
       icon: <ImageSearchIcon />,
       description:
-        "Built a text-guided pipeline that predicts where a new object can be plausibly placed in a street-scene image using candidate generation and neural ranking.",
+        "Built a text guided computer vision pipeline for object placement in street scenes, improving validation localization performance with candidate generation, neural ranking, and ablation studies.",
       tech: ["Python", "PyTorch", "Computer Vision", "Cityscapes"],
       link: "https://github.com/QihangFeng/Object-Placement-Localization-in-Street-Scenes",
     },
@@ -39,8 +49,8 @@ function ProjectsCard() {
       type: "Data Structures",
       icon: <AccountTreeIcon />,
       description:
-        "Implemented AVL Tree and Red-Black Tree from scratch in Rust with reusable tree abstractions, shared rotation logic, an interactive CLI, and Criterion benchmarks.",
-      tech: ["Rust", "AVL Tree", "Red-Black Tree", "CLI", "Benchmarking"],
+        "Implemented AVL Tree and Red Black Tree in Rust with reusable generic abstractions, shared rotation logic, an interactive CLI, and Criterion benchmarks.",
+      tech: ["Rust", "AVL Tree", "Red Black Tree", "Benchmarking"],
       link: "https://github.com/QihangFeng/Rust-Balanced-Trees",
     },
   ];
@@ -75,9 +85,9 @@ function ProjectsCard() {
             Projects
           </Typography>
 
-          <Typography color="text.secondary" sx={{ mt: 1, lineHeight: 1.7 }}>
-            Selected course projects from my master’s stage, covering
-            explainable AI, computer vision, and data structure implementation.
+          <Typography color="text.secondary" sx={{ mt: 1, lineHeight: 1.5 }}>
+            Selected projects covering frontend development, explainable AI,
+            computer vision, and data structure implementation.
           </Typography>
         </Box>
 
@@ -124,7 +134,7 @@ function ProjectsCard() {
                   </Box>
                 </Stack>
 
-                <Typography color="text.secondary" sx={{ lineHeight: 1.7 }}>
+                <Typography color="text.secondary" sx={{ lineHeight: 1.5 }}>
                   {project.description}
                 </Typography>
 
@@ -152,7 +162,7 @@ function ProjectsCard() {
                   sx={{
                     alignSelf: "flex-start",
                     textTransform: "none",
-                    fontWeight: 700,
+                    fontWeight: 600,
                     px: 0,
                   }}
                 >
