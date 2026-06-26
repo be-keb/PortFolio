@@ -44,27 +44,23 @@ function AboutCard() {
               bgcolor: "primary.main",
             }}
           >
-            QF
+            MY
           </Avatar>
 
           <Box sx={{ width: "65%" }}>
             <Typography variant="h4" sx={{ fontWeight: 600 }}>
-              Qihang Feng
+              Muhammd Yahya
             </Typography>
 
             <Stack direction={"row"} sx={{ alignItems: "center" }}>
               <LocationOnIcon />
               <Typography color="text.secondary">
-                Edmonton, AB, Canada
+                Islamabad Pakistan
               </Typography>
             </Stack>
 
             <Typography color="text.secondary" sx={{ mt: 1, ml: 0.6}}>
-              Software Engineering MEng Student
-            </Typography>
-
-            <Typography color="text.secondary" sx={{ml: 0.6}}>
-              Expected Graduation, May 2027
+              CyberSecurity Student
             </Typography>
           </Box>
         </Stack>
@@ -78,9 +74,9 @@ function AboutCard() {
             spacing={1.5}
             sx={{ mb: 1.5, alignItems: "center" }}
           >
-            <WorkIcon sx={{ color: "primary.main" }} />
+            
             <Typography variant="h5" sx={{ fontWeight: 600 }}>
-              Technical Experience
+              Me
             </Typography>
           </Stack>
 
@@ -93,27 +89,13 @@ function AboutCard() {
               borderColor: "divider",
             }}
           >
-            <Typography variant="h6">
-              Data Assistant, Campus AI Pilot Program
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Apr 2023 - Jul 2023
-            </Typography>
-            <Stack direction={"row"} sx={{ alignItems: "center" }}>
-              <LocationOnIcon sx={{ fontSize: 16 }} />
-              <Typography variant="body2" color="text.secondary">
-                Nanjing University of Posts and Telecommunications, China
-              </Typography>
-            </Stack>
-
             <Typography
               variant="body1"
               color="text.secondary"
               sx={{ mt: 1.5, lineHeight: 1.5 }}
             >
-              Reviewed model outputs, corrected labels, automated validation
-              checks with Python, and documented reproducible issues for
-              follow-up analysis.
+             I'm Muhammd Yahya, a 15 year old student and cybersecurity enthusiast from Pakistan. What started as curiosity quickly became a long-term mission: to build projects, master cybersecurity, and earn opportunities to travel the world and compete in hackathons.
+
             </Typography>
           </Box>
         </Box>
@@ -127,7 +109,7 @@ function AboutCard() {
           >
             <SchoolIcon sx={{ color: "primary.main" }} />
             <Typography variant="h5" sx={{ fontWeight: 600 }}>
-              Education
+              Current Focus
             </Typography>
           </Stack>
 
@@ -141,20 +123,12 @@ function AboutCard() {
                 borderColor: "divider",
               }}
             >
-              <Typography variant="h6">
-                M.Eng. in Electrical and Computer Engineering
-              </Typography>
-
-              <Typography variant="body2" color="text.secondary">
-                Sep 2025 - Present
-              </Typography>
-
-              <Typography variant="body2" color="text.secondary">
-                University of Alberta, Edmonton, AB, Canada
-              </Typography>
 
               <Typography variant="body1" color="text.secondary" sx={{ mt: 1 }}>
-                Specialization in Software Engineering and Intelligent Systems
+                • Full-Stack Development <br />
+                • Cybersecurity <br />
+                • AI & Machine Learning <br />
+                • Open Source <br />
               </Typography>
             </Box>
 
@@ -167,16 +141,10 @@ function AboutCard() {
                 borderColor: "divider",
               }}
             >
-              <Typography variant="h6">
-                B.Eng. in Internet of Things Engineering
-              </Typography>
-
               <Typography variant="body2" color="text.secondary">
-                Sep 2019 - Jun 2023
-              </Typography>
-
-              <Typography variant="body2" color="text.secondary">
-                Nanjing University of Posts and Telecommunications, China
+                • Travel the world through HACKATHONS (for free) <br />
+                • Become a professional Red Teamer <br />
+                • Build Open Source Projects <br />
               </Typography>
             </Box>
           </Stack>

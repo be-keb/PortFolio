@@ -5,13 +5,12 @@ import {
   IconButton,
   Stack,
   Typography,
+  Avatar,
 } from "@mui/material";
 
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import DownloadIcon from "@mui/icons-material/Download";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 
 import AboutCard from "./AboutCard";
 import SkillsCard from "./SkillsCard";
@@ -56,6 +55,7 @@ function HeroSection({ activePanel, setActivePanel }) {
             transition: "all 500ms ease",
           }}
         >
+          {/* LEFT COLUMN: Hero Content */}
           <Box
             sx={{
               maxWidth: hasActivePanel ? 680 : 760,
@@ -64,146 +64,114 @@ function HeroSection({ activePanel, setActivePanel }) {
               transition: "all 500ms ease",
             }}
           >
-            <Typography
-              variant="overline"
-              sx={{
-                color: "primary.main",
-                fontWeight: 700,
-                letterSpacing: 1.5,
-              }}
-            >
-              Software Engineering Portfolio · Work in Progress
-            </Typography>
-
-            <Typography
-              variant="h2"
-              component="h1"
-              sx={{
-                mt: 1,
-                fontWeight: 800,
-                lineHeight: 1.1,
-                fontSize: {
-                  xs: "2.6rem",
-                  md: hasActivePanel ? "3.2rem" : "4rem",
-                },
-              }}
-            >
-              Hi, I’m Qihang Feng.
-            </Typography>
-
-            <Typography
-              variant="h5"
-              sx={{
-                mt: 2,
-                color: "text.secondary",
-                lineHeight: 1.5,
-              }}
-            >
-              MEng student building full stack applications and machine learning
-              projects with React, FastAPI, PyTorch, and SQL.
-            </Typography>
-
-            <Typography
-              variant="body1"
-              sx={{
-                mt: 3,
-                color: "text.secondary",
-                lineHeight: 1.8,
-              }}
-            >
-              I focus on practical software development, reproducible machine
-              learning workflows, data structures, and technical content that
-              turns complex ideas into clear materials.
-            </Typography>
-
             <Stack
-              direction={{ xs: "column", sm: "row" }}
-              spacing={2}
-              sx={{ mt: 4 }}
-            >
-              <Button
-                variant="contained"
-                size="large"
-                onClick={handleMainButtonClick}
-                endIcon={<ArrowForwardIcon />}
-                sx={{
-                  textTransform: "none",
-                  fontWeight: 700,
-                  borderRadius: 2,
-                  px: 3,
-                  width: { xs: "100%", sm: "fit-content" },
-                }}
-              >
-                {hasActivePanel ? "Next" : "Start"}
-              </Button>
-
-              <Button
-                variant="outlined"
-                size="large"
-                href={`${import.meta.env.BASE_URL}Qihang_Feng_Resume.pdf`}
-                download
-                startIcon={<DownloadIcon />}
-                sx={{
-                  textTransform: "none",
-                  fontWeight: 700,
-                  borderRadius: 2,
-                  px: 3,
-                  width: { xs: "100%", sm: "fit-content" },
-                  color: "text.primary",
-                  borderColor: "grey.400",
-                  backgroundColor: "rgba(255, 255, 255, 0.75)",
-                  backdropFilter: "blur(4px)",
-
-                  "&:hover": {
-                    borderColor: "grey.600",
-                    backgroundColor: "rgba(245, 245, 245, 0.9)",
-                  },
-                }}
-              >
-                Download Resume
-              </Button>
-            </Stack>
-
-            <Stack
-              direction="row"
-              spacing={2}
+              direction={{ xs: "column", md: "row" }}
+              spacing={4}
+              alignItems="center"
               sx={{
-                mt: 4,
-                alignItems: "center",
+                width: "100%",
               }}
             >
-              <IconButton
-                href="https://www.linkedin.com/in/qihang-feng-48bb72395/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                sx={{ color: "#0A66C2" }}
-              >
-                <LinkedInIcon fontSize="large" />
-              </IconButton>
+              <Avatar
+                src="/fav_crop.jpg"
+                alt="me"
+                sx={{
+                  width: 180,
+                  height: 180,
+                  border: "5px solid #1976d2",
+                  boxShadow:
+                    "0 0 20px rgba(25,118,210,.4), 0 0 60px rgba(25,118,210,.2)",
+                  flexShrink: 0,
+                }}
+              />
 
-              <IconButton
-                href="https://github.com/QihangFeng"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                sx={{ color: "#181717" }}
-              >
-                <GitHubIcon fontSize="large" />
-              </IconButton>
+              <Box>
+                <Typography
+                  variant="overline"
+                  sx={{
+                    color: "primary.main",
+                    fontWeight: 700,
+                    letterSpacing: 1.5,
+                  }}
+                >
+                  CyberSec Portfolio
+                </Typography>
 
-              <IconButton
-                href="https://www.youtube.com/@BeaverExplorers"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                sx={{ color: "#FF0000" }}
-              >
-                <YouTubeIcon fontSize="large" />
-              </IconButton>
+                <Typography
+                  variant="h2"
+                  component="h1"
+                  sx={{
+                    mt: 1,
+                    fontWeight: 800,
+                  }}
+                >
+                  Hi, I'm Beak.
+                </Typography>
+
+                <Typography
+                  variant="h5"
+                  sx={{
+                    mt: 2,
+                    color: "text.secondary",
+                    lineHeight: 1.5,
+                  }}
+                >
+                  A 15 year old CyberSec student building projects to earn my way around the world
+                  <br />
+                  <span style={{ fontWeight: 500 }}>
+                    Developer • Builder • Future Red Teamer
+                  </span>
+                </Typography>
+
+                {/* Buttons & Social Icons */}
+                <Box
+                  sx={{
+                    mt: 3,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 2,
+                  }}
+                >
+                  <Button
+                    variant="contained"
+                    size="large"
+                    onClick={handleMainButtonClick}
+                    endIcon={<ArrowForwardIcon />}
+                  >
+                    {hasActivePanel ? "Next" : "Start"}
+                  </Button>
+
+                  <IconButton
+                    href="https://github.com/be-akverse"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <GitHubIcon fontSize="large" />
+                  </IconButton>
+
+                  <IconButton
+                    href="https://discord.com/users/1202612158722998275"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Discord"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 127.14 96.36"
+                      width="28"
+                      height="28"
+                      fill="currentColor"
+                    >
+                      <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S53.86,46,53.71,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.23,65.69,84.69,65.69Z" />
+                    </svg>
+                  </IconButton>
+                </Box>
+              </Box>
             </Stack>
           </Box>
 
+          {/* RIGHT COLUMN: Panel Cards */}
           {activePanel === "about" && <AboutCard />}
           {activePanel === "skills" && <SkillsCard />}
           {activePanel === "projects" && <ProjectsCard />}

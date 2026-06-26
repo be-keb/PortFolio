@@ -12,12 +12,12 @@ function SkillsCard() {
     {
       title: "Frontend Development",
       icon: <WebIcon />,
-      skills: ["React", "JavaScript", "Vite", "Material UI"],
+      skills: ["HTML", "CSS", "TypeScript", "Material UI"],
     },
     {
       title: "Backend Development",
       icon: <DnsIcon />,
-      skills: ["Node.js", "Express", "REST APIs", "FastAPI"],
+      skills: ["Node.js", "REST APIs", "FastAPI"],
     },
     {
       title: "Databases",
@@ -25,19 +25,19 @@ function SkillsCard() {
       skills: ["SQL", "MySQL", "PostgreSQL"],
     },
     {
-      title: "Machine Learning and Data",
+      title: "Cyber Security",
       icon: <PsychologyIcon />,
-      skills: ["Python", "PyTorch", "OpenCV", "scikit-learn", "R"],
+      skills: ["Linux", "Networking", "OWASP Top 10", "Wire Shark", "Nmap"],
     },
     {
       title: "Programming Foundations",
       icon: <TerminalIcon />,
-      skills: ["Rust", "C", "C++", "Java"],
+      skills: ["Python", "C"],
     },
     {
       title: "Tools and Workflow",
       icon: <BuildIcon />,
-      skills: ["Git", "GitHub", "VS Code", "JupyterLab"],
+      skills: ["Git", "GitHub", "VS Code"],
     },
   ];
 
@@ -72,8 +72,8 @@ function SkillsCard() {
           </Typography>
 
           <Typography color="text.secondary" sx={{ mt: 1, lineHeight: 1.5 }}>
-            A practical technical stack for building full stack applications,
-            machine learning projects, and reproducible software workflows.
+            A practical technical stack for building web projects
+             and cybersecurity tools.
           </Typography>
         </Box>
 

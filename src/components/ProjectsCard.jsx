@@ -24,34 +24,25 @@ function ProjectsCard() {
       description:
         "Built and deployed an interactive portfolio website with React, Vite, and Material UI, featuring animated card navigation, responsive layout, and a working contact form.",
       tech: ["React", "Vite", "Material UI", "GitHub Pages", "Web3Forms"],
-      link: "https://github.com/QihangFeng/portfolio",
+      link: "https://github.com/be-akverse/portfolio",
     },
     {
-      title: "Reliable LIME under Query Budget Constraints",
-      type: "Explainable AI",
+      title: "Cyber Security Recources",
+      type: "CyberSec",
       icon: <PsychologyIcon />,
       description:
-        "Built a budget sweep pipeline for LIME image explanations and designed a coarse to fine budget allocation strategy to improve faithfulness under low query budgets.",
-      tech: ["Python", "LIME", "XAI", "Evaluation", "scikit-learn"],
-      link: "https://github.com/QihangFeng/Reliable-LIME-under-Query-Budget-Constraints",
+        "Built a clean UI website that showcases a collection of cybersecurity recources distinctively for BLUE TEAM and RED TEAM.",
+      tech: ["HTML", "CSS", "JS", "Github Pages", "Wikipedia"],
+      link: "https://github.com/be-akverse/cybersec-resources.git",
     },
     {
-      title: "Object Placement Localization in Street Scenes",
+      title: "ASCII Vision",
       type: "Computer Vision",
       icon: <ImageSearchIcon />,
       description:
-        "Built a text guided computer vision pipeline for object placement in street scenes, improving validation localization performance with candidate generation, neural ranking, and ablation studies.",
-      tech: ["Python", "PyTorch", "Computer Vision", "Cityscapes"],
-      link: "https://github.com/QihangFeng/Object-Placement-Localization-in-Street-Scenes",
-    },
-    {
-      title: "Rust Balanced Trees",
-      type: "Data Structures",
-      icon: <AccountTreeIcon />,
-      description:
-        "Implemented AVL Tree and Red Black Tree in Rust with reusable generic abstractions, shared rotation logic, an interactive CLI, and Criterion benchmarks.",
-      tech: ["Rust", "AVL Tree", "Red Black Tree", "Benchmarking"],
-      link: "https://github.com/QihangFeng/Rust-Balanced-Trees",
+        "Built an Open Source tool with a retro matix theme that catches live camera feed and convert it into donwloadable ASCII Art using JavaScript",
+      tech: ["HTML", "CSS", "Computer Vision", "JavaScript", "Github Pages", "Open Source"],
+      link: "https://github.com/be-akverse/ASCII-Vision.git",
     },
   ];
 
@@ -86,8 +77,8 @@ function ProjectsCard() {
           </Typography>
 
           <Typography color="text.secondary" sx={{ mt: 1, lineHeight: 1.5 }}>
-            Selected projects covering frontend development, explainable AI,
-            computer vision, and data structure implementation.
+            Selected projects covering frontend development,
+            computer vision, and open source data.
           </Typography>
         </Box>
 

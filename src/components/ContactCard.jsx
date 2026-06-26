@@ -20,8 +20,8 @@ function ContactCard() {
   const contactLinks = [
     {
       label: "Email",
-      value: "q7feng@gmail.com",
-      href: "mailto:q7feng@gmail.com",
+      value: "howactivity4@gmail.com",
+      href: "mailto:howactivity4@gmail.com",
       icon: <EmailIcon />,
     },
   ];
