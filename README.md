@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio
 
 A clean and professional portfolio template built with React, Vite, and Material UI. It helps developers showcase their background, technical skills, selected projects, resume, and contact information in an interactive layout.
@@ -24,3 +25,7 @@ https://qfeng.beaverexp.com/
 - JavaScript
 - GitHub Pages
 - GitHub Actions
+=======
+# PortFolio
+My portfolio
+>>>>>>> 36d0420 (Initial commit)

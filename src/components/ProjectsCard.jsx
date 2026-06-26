@@ -24,7 +24,7 @@ function ProjectsCard() {
       description:
         "Built and deployed an interactive portfolio website with React, Vite, and Material UI, featuring animated card navigation, responsive layout, and a working contact form.",
       tech: ["React", "Vite", "Material UI", "GitHub Pages", "Web3Forms"],
-      link: "https://github.com/be-akverse/portfolio",
+      link: "https://github.com/be-akverse/PortFolio.git",
     },
     {
       title: "Cyber Security Recources",
