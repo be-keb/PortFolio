@@ -13,7 +13,7 @@ function Footer() {
       }}
     >
       <Typography variant="body2" color="text.secondary" sx={{textAlign: 'center'}}>
-        © {new Date().getFullYear()} Muhammad Yahya. All rights reserved.
+        © {new Date().getFullYear()} BeKeB All rights reserved.
       </Typography>
     </Box>
   );
