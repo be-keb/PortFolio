@@ -24,7 +24,7 @@ function ProjectsCard() {
       description:
         "Built and deployed an interactive portfolio website with React, Vite, and Material UI, featuring animated card navigation, responsive layout, and a working contact form.",
       tech: ["React", "Vite", "Material UI", "GitHub Pages", "Web3Forms"],
-      link: "https://github.com/be-akverse/PortFolio.git",
+      link: "https://github.com/be-keb/PortFolio.git",
     },
     {
       title: "Cyber Security Recources",
@@ -33,7 +33,7 @@ function ProjectsCard() {
       description:
         "Built a clean UI website that showcases a collection of cybersecurity recources distinctively for BLUE TEAM and RED TEAM.",
       tech: ["HTML", "CSS", "JS", "Github Pages", "Wikipedia"],
-      link: "https://github.com/be-akverse/cybersec-resources.git",
+      link: "https://github.com/be-keb/cybersec-resources.git",
     },
     {
       title: "ASCII Vision",
@@ -42,7 +42,7 @@ function ProjectsCard() {
       description:
         "Built an Open Source tool with a retro matix theme that catches live camera feed and convert it into donwloadable ASCII Art using JavaScript",
       tech: ["HTML", "CSS", "Computer Vision", "JavaScript", "Github Pages", "Open Source"],
-      link: "https://github.com/be-akverse/ASCII-Vision.git",
+      link: "https://github.com/be-keb/ASCII-Vision.git",
     },
   ];
 
