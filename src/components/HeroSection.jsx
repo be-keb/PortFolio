@@ -105,7 +105,7 @@ function HeroSection({ activePanel, setActivePanel }) {
                     fontWeight: 800,
                   }}
                 >
-                  Hi, I'm Beak.
+                  Hi, I'm BeKeB.
                 </Typography>
 
                 <Typography
@@ -116,7 +116,7 @@ function HeroSection({ activePanel, setActivePanel }) {
                     lineHeight: 1.5,
                   }}
                 >
-                  A 15 year old CyberSec student building projects to earn my way around the world
+                  A young CyberSec student building projects to earn my way around the world
                   <br />
                   <span style={{ fontWeight: 500 }}>
                     Developer • Builder • Future Red Teamer
@@ -142,7 +142,7 @@ function HeroSection({ activePanel, setActivePanel }) {
                   </Button>
 
                   <IconButton
-                    href="https://github.com/be-akverse"
+                    href="https://github.com/be-keb"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub"
