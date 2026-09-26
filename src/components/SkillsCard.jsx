@@ -27,7 +27,7 @@ function SkillsCard() {
     {
       title: "Cyber Security",
       icon: <PsychologyIcon />,
-      skills: ["Linux", "Networking", "OWASP Top 10", "Wire Shark", "Nmap"],
+      skills: ["Linux", "Networking", "Web Exploitation", "Tools", "Scripting"],
     },
     {
       title: "Programming Foundations",
@@ -37,7 +37,7 @@ function SkillsCard() {
     {
       title: "Tools and Workflow",
       icon: <BuildIcon />,
-      skills: ["Git", "GitHub", "VS Code"],
+      skills: ["Git", "GitHub", "VS Code", "Netlify", "LLM"],
     },
   ];
 
