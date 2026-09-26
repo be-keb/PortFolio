@@ -49,7 +49,7 @@ function AboutCard() {
 
           <Box sx={{ width: "65%" }}>
             <Typography variant="h4" sx={{ fontWeight: 600 }}>
-              Muhammd Yahya
+              BeKeB
             </Typography>
 
             <Stack direction={"row"} sx={{ alignItems: "center" }}>
@@ -94,7 +94,7 @@ function AboutCard() {
               color="text.secondary"
               sx={{ mt: 1.5, lineHeight: 1.5 }}
             >
-             I'm Muhammd Yahya, a 15 year old student and cybersecurity enthusiast from Pakistan. What started as curiosity quickly became a long-term mission: to build projects, master cybersecurity, and earn opportunities to travel the world and compete in hackathons.
+             I'm Muhammd Yahya aka BeKeB, a high school student and cybersecurity enthusiast from Pakistan. Cyber security started as my curiosity and quickly became a long-term mission: to build projects, master cybersecurity, and earn opportunities to travel the world and compete in hackathons.
 
             </Typography>
           </Box>
