@@ -1,11 +1,10 @@
 
 # Portfolio
 
-Just a simple Portfolio
-
+I dont think this needs an explanation ;)
 ## Live Demo
 
-https://beakportfolio.netlify.app
+[Portfolio](https://kebfolio.netlify.app)
 
 ## Tech Stack
 
@@ -17,5 +16,5 @@ https://beakportfolio.netlify.app
 - GitHub Actions
 
 ## Credits
-
+Almost all the credits go to this random chinese student!
 @QihangFeng
